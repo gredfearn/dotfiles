@@ -49,7 +49,7 @@ man() {
 
 # Maven
 export ATLAS_MVN=/usr/local/apache-maven-3.5.4/bin/mvn
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_201`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_201`
 export FZF_DEFAULT_COMMAND='rg --files'
 
 # Load FZF

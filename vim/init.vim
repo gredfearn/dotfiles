@@ -55,7 +55,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 " Color Schemes
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
+Plug 'sainnhe/vim-color-desert-night'
 
 " Tmux Support
 Plug 'christoomey/vim-tmux-navigator'

@@ -32,8 +32,14 @@ export EDITOR='nvim'
 alias ls="exa -a --sort=type"
 alias ll="exa -la --sort=type --git"
 
+# utils
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias unhide="find . -maxdepth 1 -type f -name '\.*' | sed -e 's,^\./\.,,' | sort | xargs -iname mv .name name"
+
 # Git
 alias g='git'
+alias randogcm='git commit -m "$(w3m whatthecommit.com | head -n 1)"'
+
 
 # Shorten common commands
 alias gst='g status'
@@ -111,12 +117,12 @@ alias gir="g rebase -i origin/master"
 
 # Common Tasks
 alias c='clear'
-alias cdp='cd ~/Documents/00_Work/'
+alias cdp='cd ~/tap'
 alias cdht='cd /Applications/XAMPP/htdocs'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias yarnrm='rm -rf node_modules && yarn'
 alias nvmrm='rm -rf node_modules && npm i'
-
+alias lazy="lazydocker"
 # Reddit!
 alias reddit="ssh redditbox.us"
 finder () {
