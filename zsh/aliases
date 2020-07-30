@@ -21,6 +21,9 @@ alias v='f -e nvim'
 
 # Tmux
 alias tmux="TERM=screen-256color-bce tmux"
+alias tnt="tmux new -t"
+alias tat="tmux a -t"
+
 
 # Miscellaneous Helpers
 alias reload="source ~/.zshrc"
@@ -29,17 +32,22 @@ alias reload="source ~/.zshrc"
 export EDITOR='nvim'
 
 # List all files colorized in long format, including dot files
-alias ls="exa -a --sort=type"
-alias ll="exa -la --sort=type --git"
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -A'
+alias ll='ls -lA'
+alias lt='ls --tree'
 
 # utils
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias unhide="find . -maxdepth 1 -type f -name '\.*' | sed -e 's,^\./\.,,' | sort | xargs -iname mv .name name"
-
+alias jump="ssh -i ~/.ssh/jumpbox_master.pem ubuntu@54.90.68.66"
+alias sync_keys="rsync -av ~/.ssh/keys/ -e 'ssh -i ~/.ssh/jumpbox_master.pem' ubuntu@54.90.68.66:~/keys/"
+alias mysql='mycli'
+alias test_cipher='./test_cipher.sh'
 # Git
 alias g='git'
-alias randogcm='git commit -m "$(w3m whatthecommit.com | head -n 1)"'
-
+alias gcrm='git commit -m "$(w3m whatthecommit.com | head -n 1)"'
 
 # Shorten common commands
 alias gst='g status'
@@ -73,6 +81,7 @@ show_branches() {
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
+
 alias gb='show_branches'
 
 # Nicer diff
@@ -117,12 +126,20 @@ alias gir="g rebase -i origin/master"
 
 # Common Tasks
 alias c='clear'
-alias cdp='cd ~/tap'
+alias cdd='cd ~/tap'
+alias cdg='cd ~/tap/06_green'
+alias cdb='cd ~/tap/02_blue'
+alias cdr='cd ~/tap/03_red'
+alias cdh='cd ~/tap/07_haiku'
+
 alias cdht='cd /Applications/XAMPP/htdocs'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias yarnrm='rm -rf node_modules && yarn'
-alias nvmrm='rm -rf node_modules && npm i'
+alias npmrm='rm -rf node_modules && npm i'
 alias lazy="lazydocker"
+
+alias tf='terraform'
+
 # Reddit!
 alias reddit="ssh redditbox.us"
 finder () {

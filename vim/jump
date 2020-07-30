@@ -48,14 +48,12 @@ Plug 'alvan/vim-closetag'
 
 " Language Support
 Plug 'sheerun/vim-polyglot'
-Plug 'pangloss/vim-javascript'
-Plug 'mattn/emmet-vim'
 Plug 'moll/vim-node'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'suy/vim-context-commentstring'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'nikvdp/ejs-syntax'
-Plug 'maxmellon/vim-jsx-pretty'
 
 " Color Schemes
 " Plug 'chriskempson/base16-vim'
