@@ -14,6 +14,9 @@ light () {
   base16_harmonic-light
 }
 
+export TYPEWRITTEN_PROMPT_LAYOUT="singleline"
+export TYPEWRITTEN_GIT_RELATIVE_PATH=true
+
 # Fixes tmux windows color schemes
 TERM="screen-256color"
 export TERM
@@ -21,15 +24,19 @@ export TERM
 # Load fasd
 eval "$(fasd --init auto)"
 
+# Load StarShip
+eval "$(starship init bash)"
+
 export PATH="/Users/grantred/dotfiles/bin:$PATH"
 
 # Make sure Homebrew's packages before others
 export PATH="/usr/local/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
 
 # Maverick stuff
 export PATH="/Users/grantred/Library/Python/2.7/bin:$PATH"
 export PATH="/usr/local/apache-maven-3.5.4/bin:$PATH"
-
+export PATH="$PATH:/usr/local/bin/python"
 if [[ -f "${HOME}/.config/cloudtoken/bashrc_additions" ]]; then
     source "${HOME}/.config/cloudtoken/bashrc_additions"
 fi
@@ -47,10 +54,10 @@ man() {
       man "$@"
 }
 # Powerline
-powerline-daemon -q
+# powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+# source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 # Maven
 export ATLAS_MVN=/usr/local/apache-maven-3.5.4/bin/mvn

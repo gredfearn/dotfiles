@@ -24,6 +24,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias tnt="tmux new -t"
 alias tat="tmux a -t"
 
+# custom scripts
+alias push_client="sh ~/dotfiles/scripts/push_client.sh";
 
 # Miscellaneous Helpers
 alias reload="source ~/.zshrc"
@@ -127,10 +129,6 @@ alias gir="g rebase -i origin/master"
 # Common Tasks
 alias c='clear'
 alias cdd='cd ~/tap'
-alias cdg='cd ~/tap/06_green'
-alias cdb='cd ~/tap/02_blue'
-alias cdr='cd ~/tap/03_red'
-alias cdh='cd ~/tap/07_haiku'
 
 alias cdht='cd /Applications/XAMPP/htdocs'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'

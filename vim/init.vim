@@ -18,8 +18,7 @@ Plug 'tpope/vim-vinegar'
 
 " Completion and Snippets
 Plug 'SirVer/ultisnips'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Version Control
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
@@ -354,8 +353,6 @@ command! Reload source $MYVIMRC
 " Close all buffers
 command! BDA bufdo Bdelete
 
-" Remove \ (Windows line endings) from files
-command! RemoveM %s/\//g
 
 " Terminal commands
 command! -nargs=* TermHorizontal split | terminal <args>

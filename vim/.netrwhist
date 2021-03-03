@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/Users/grantredfearn/.azcopy'
-let g:netrw_dirhist_1='/Users/grantredfearn'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/grantredfearn/dotfiles/zsh'
+let g:netrw_dirhist_2='/Users/grantredfearn/dotfiles'
+let g:netrw_dirhist_1='/Users/grantredfearn/dotfiles/scripts'
+let g:netrw_dirhist_0='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/templates'
+let g:netrw_dirhist_9='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src'
+let g:netrw_dirhist_8='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/components'
+let g:netrw_dirhist_7='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/components/page-components'
+let g:netrw_dirhist_6='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/components'
+let g:netrw_dirhist_5='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/components/page-components'
+let g:netrw_dirhist_4='/Users/grantredfearn/tap/02-ext/auxin/auxin-dot-com/src/components'
