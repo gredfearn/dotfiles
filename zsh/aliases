@@ -26,6 +26,7 @@ alias tat="tmux a -t"
 
 # custom scripts
 alias push_client="sh ~/dotfiles/scripts/push_client.sh";
+alias yarnauditfix="sh ~/dotfiles/scripts/yarn_audit_fix.sh";
 
 # Miscellaneous Helpers
 alias reload="source ~/.zshrc"
